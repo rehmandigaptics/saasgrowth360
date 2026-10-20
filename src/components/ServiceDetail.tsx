@@ -5,6 +5,7 @@ import {
   type ServiceItem,
 } from "@/src/data/service-catalog";
 import { PageShell } from "@/src/components/PageShell";
+import { sitePath } from "@/src/lib/site-path";
 
 function RichText({
   as: Tag = "span",
@@ -60,7 +61,7 @@ function ServiceContent({ slug, service }: { slug: string; service: ServiceItem 
             <div className="col-lg-5">
               <div className="inner-hero-visual reveal-scale">
                 <div className="inner-image-card">
-                  <img src={service.image} alt={service.image_alt} />
+                  <img src={sitePath(service.image)} alt={service.image_alt} />
                   <div className="inner-image-caption">
                     <small>{service.caption_small}</small>
                     <strong>{service.caption_strong}</strong>
@@ -116,7 +117,7 @@ function ServiceContent({ slug, service }: { slug: string; service: ServiceItem 
               </div>
             </div>
             <div className="feature-image reveal-scale">
-              <img src={service.work_image} alt={service.work_image_alt} />
+              <img src={sitePath(service.work_image)} alt={service.work_image_alt} />
             </div>
           </div>
         </div>

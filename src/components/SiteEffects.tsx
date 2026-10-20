@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { sitePath } from "@/src/lib/site-path";
 
 export function SiteEffects() {
   const pathname = usePathname();
@@ -30,7 +31,7 @@ export function SiteEffects() {
       await new Promise<void>((resolve, reject) => {
         scriptEl = document.createElement("script");
         scriptEl.id = "sg-main-js";
-        scriptEl.src = `/assets/js/main.js?v=${Date.now()}`;
+        scriptEl.src = `${sitePath("/assets/js/main.js")}?v=${Date.now()}`;
         scriptEl.onload = () => resolve();
         scriptEl.onerror = () => reject(new Error("Failed to load main.js"));
         document.body.appendChild(scriptEl);

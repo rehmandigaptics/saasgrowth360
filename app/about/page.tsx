@@ -1,3 +1,4 @@
+import { sitePath } from "@/src/lib/site-path";
 import type { Metadata } from "next";
 import { PageShell } from "@/src/components/PageShell";
 
@@ -26,8 +27,8 @@ export default function Page() {
                     <div className="about-proof-item"><span>03</span><strong>Measurement</strong></div>
                   </div>
                   <div className="inner-actions reveal-up">
-                    <a className="btn btn-primary-premium inner-btn-primary" href="/contact">Start a Growth Audit <i className="bi bi-arrow-up-right"></i></a>
-                    <a className="btn btn-glass inner-btn-secondary" href="/growth-system"><span className="btn-play"><i className="bi bi-arrow-right"></i></span> See our operating model</a>
+                    <a className="btn btn-primary-premium inner-btn-primary" href={sitePath("/contact")}>Start a Growth Audit <i className="bi bi-arrow-up-right"></i></a>
+                    <a className="btn btn-glass inner-btn-secondary" href={sitePath("/growth-system")}><span className="btn-play"><i className="bi bi-arrow-right"></i></span> See our operating model</a>
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -38,7 +39,7 @@ export default function Page() {
                         <div className="about-top-dots"><i></i><i></i><i></i></div>
                       </div>
                       <div className="inner-image-card about-image-card">
-                        <img src="/assets/images/hero-abt.png" alt="SaaS growth team strategy session" />
+                        <img src={sitePath("/assets/images/hero-abt.png")} alt="SaaS growth team strategy session" />
                         <div className="about-image-shade"></div>
                         <div className="about-metric-stack">
                           <div className="about-mini-card"><small>PIPELINE</small><strong>Connected</strong><span><i></i> Active system</span></div>
@@ -79,7 +80,7 @@ export default function Page() {
               </div>
             </div>
           </section>
-          <section className="inner-section"><div className="container-xl"><div className="split-visual"><div><div className="inner-section-kicker">Why we exist</div><h2 className="inner-section-title">Most growth problems are <span>system problems.</span></h2><p className="inner-section-copy">Traffic is rarely the full answer. SaaS growth breaks when positioning, acquisition, conversion, onboarding, lifecycle and revenue operations are managed independently. We connect those layers around the customer journey and the metrics that matter.</p><div className="feature-list"><div className="feature-row"><span><i className="bi bi-diagram-3"></i></span><div><strong>Connected architecture</strong><small>Channels, journeys, data and automation designed to reinforce each other.</small></div></div><div className="feature-row"><span><i className="bi bi-speedometer2"></i></span><div><strong>Execution velocity</strong><small>Prioritized workstreams tied to bottlenecks instead of random marketing activity.</small></div></div><div className="feature-row"><span><i className="bi bi-graph-up-arrow"></i></span><div><strong>Measurable leverage</strong><small>Every initiative is mapped to pipeline, conversion, activation, retention or expansion.</small></div></div></div></div><div className="feature-image reveal-scale"><img src="/assets/images/Why-we-exist.png" alt="Technology team collaborating" /></div></div></div></section>
+          <section className="inner-section"><div className="container-xl"><div className="split-visual"><div><div className="inner-section-kicker">Why we exist</div><h2 className="inner-section-title">Most growth problems are <span>system problems.</span></h2><p className="inner-section-copy">Traffic is rarely the full answer. SaaS growth breaks when positioning, acquisition, conversion, onboarding, lifecycle and revenue operations are managed independently. We connect those layers around the customer journey and the metrics that matter.</p><div className="feature-list"><div className="feature-row"><span><i className="bi bi-diagram-3"></i></span><div><strong>Connected architecture</strong><small>Channels, journeys, data and automation designed to reinforce each other.</small></div></div><div className="feature-row"><span><i className="bi bi-speedometer2"></i></span><div><strong>Execution velocity</strong><small>Prioritized workstreams tied to bottlenecks instead of random marketing activity.</small></div></div><div className="feature-row"><span><i className="bi bi-graph-up-arrow"></i></span><div><strong>Measurable leverage</strong><small>Every initiative is mapped to pipeline, conversion, activation, retention or expansion.</small></div></div></div></div><div className="feature-image reveal-scale"><img src={sitePath("/assets/images/Why-we-exist.png")} alt="Technology team collaborating" /></div></div></div></section>
           <section className="inner-section alt about-process-section">
             <div className="about-process-glow about-process-glow-a"></div>
             <div className="about-process-glow about-process-glow-b"></div>
@@ -123,7 +124,7 @@ export default function Page() {
 
             </div>
           </section>
-          <section className="inner-cta"><div className="container-xl"><div className="inner-cta-box reveal-scale"><h2>Build a growth system your team can actually <span>operate.</span></h2><p>Start with a focused audit and leave with a clearer view of what is limiting growth, what to fix first and how the pieces should connect.</p><div className="inner-actions"><a className="btn btn-primary-premium inner-btn-primary" href="/contact">Book a Growth Audit <i className="bi bi-arrow-up-right"></i></a></div></div></div></section>
+          <section className="inner-cta"><div className="container-xl"><div className="inner-cta-box reveal-scale"><h2>Build a growth system your team can actually <span>operate.</span></h2><p>Start with a focused audit and leave with a clearer view of what is limiting growth, what to fix first and how the pieces should connect.</p><div className="inner-actions"><a className="btn btn-primary-premium inner-btn-primary" href={sitePath("/contact")}>Book a Growth Audit <i className="bi bi-arrow-up-right"></i></a></div></div></div></section>
     </PageShell>
   );
 }

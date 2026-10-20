@@ -1,3 +1,4 @@
+import { sitePath } from "@/src/lib/site-path";
 import type { Metadata } from "next";
 import { PageShell } from "@/src/components/PageShell";
 
@@ -13,8 +14,8 @@ export default function Page() {
             <div className="inner-kicker reveal-up"><i className="bi bi-gem"></i> Why SaaSGrowth360</div>
             <h1 className="reveal-up">Not another agency. A <span>connected growth operating partner.</span></h1>
             <p className="lead reveal-up">We combine strategy, execution, lead generation, RevOps, GoHighLevel, n8n and automation so your growth system moves as one instead of being split across disconnected vendors.</p>
-            <div className="inner-actions reveal-up"><a className="btn btn-primary-premium inner-btn-primary" href="/contact">Book a Growth Audit <i className="bi bi-arrow-up-right"></i></a><a className="btn btn-glass inner-btn-secondary" href="/services">Explore capabilities</a></div>
-          </div><div className="col-lg-5"><div className="inner-hero-visual reveal-scale"><div className="inner-image-card"><img src="/assets/images/hero-why-us.png" alt="Senior growth team collaborating" /><div className="inner-image-caption"><small>One accountable growth partner</small><strong>Strategy → systems → execution → optimization</strong></div></div><div className="inner-float-stat"><small>Operating model</small><strong>360°</strong></div></div></div></div></div></section>
+            <div className="inner-actions reveal-up"><a className="btn btn-primary-premium inner-btn-primary" href={sitePath("/contact")}>Book a Growth Audit <i className="bi bi-arrow-up-right"></i></a><a className="btn btn-glass inner-btn-secondary" href={sitePath("/services")}>Explore capabilities</a></div>
+          </div><div className="col-lg-5"><div className="inner-hero-visual reveal-scale"><div className="inner-image-card"><img src={sitePath("/assets/images/hero-why-us.png")} alt="Senior growth team collaborating" /><div className="inner-image-caption"><small>One accountable growth partner</small><strong>Strategy → systems → execution → optimization</strong></div></div><div className="inner-float-stat"><small>Operating model</small><strong>360°</strong></div></div></div></div></div></section>
 
           <section className="inner-section why-proof-wrap"><div className="container-xl"><div className="why-proof-bar"><div className="why-proof-item"><small>Approach</small><strong>Senior-led</strong><span>The strategy team stays close to implementation.</span></div><div className="why-proof-item"><small>Execution</small><strong>Hands-on</strong><span>We build, optimize and operationalize the work.</span></div><div className="why-proof-item"><small>Systems</small><strong>Connected</strong><span>CRM, automation, demand and lifecycle work together.</span></div><div className="why-proof-item"><small>Focus</small><strong>Revenue growth</strong><span>Success is tied to business outcomes, not motion.</span></div></div></div></section>
 
@@ -29,7 +30,7 @@ export default function Page() {
             </div>
           </div></section>
 
-          <section className="inner-section alt"><div className="container-xl"><div className="split-visual"><div className="feature-image reveal-scale"><img src="/assets/images/What-that-means-for-you.png" alt="Growth strategy meeting" /></div><div><div className="inner-section-kicker">What that means for you</div><h2 className="inner-section-title">Fewer handoffs. More <span>operating clarity.</span></h2><p className="inner-section-copy">Instead of coordinating one agency for ads, another for CRM, a freelancer for automation and an internal team trying to connect the data, you get one growth model with clear accountability.</p><div className="feature-list">
+          <section className="inner-section alt"><div className="container-xl"><div className="split-visual"><div className="feature-image reveal-scale"><img src={sitePath("/assets/images/What-that-means-for-you.png")} alt="Growth strategy meeting" /></div><div><div className="inner-section-kicker">What that means for you</div><h2 className="inner-section-title">Fewer handoffs. More <span>operating clarity.</span></h2><p className="inner-section-copy">Instead of coordinating one agency for ads, another for CRM, a freelancer for automation and an internal team trying to connect the data, you get one growth model with clear accountability.</p><div className="feature-list">
             <div className="feature-row"><span><i className="bi bi-check2-circle"></i></span><div><strong>Lead generation connected to CRM</strong><small>Campaigns, forms, enrichment, qualification and follow-up are designed as one journey.</small></div></div>
             <div className="feature-row"><span><i className="bi bi-check2-circle"></i></span><div><strong>GHL configured around your sales motion</strong><small>Pipelines, automations, communication and booking flows support how your team actually sells.</small></div></div>
             <div className="feature-row"><span><i className="bi bi-check2-circle"></i></span><div><strong>n8n connects the tools behind the scenes</strong><small>APIs, data movement, AI steps and operational triggers remove repetitive manual work.</small></div></div>
@@ -146,7 +147,7 @@ export default function Page() {
             </div>
           </section>
 
-          <section className="inner-cta"><div className="container-xl"><div className="inner-cta-box reveal-scale"><h2>If your growth stack feels fragmented, <span>we should talk.</span></h2><p>We will help you identify the highest-leverage constraint and show how the pieces can operate as one connected system.</p><div className="inner-actions"><a className="btn btn-primary-premium inner-btn-primary" href="/contact">Book a Growth Audit <i className="bi bi-arrow-up-right"></i></a></div></div></div></section>
+          <section className="inner-cta"><div className="container-xl"><div className="inner-cta-box reveal-scale"><h2>If your growth stack feels fragmented, <span>we should talk.</span></h2><p>We will help you identify the highest-leverage constraint and show how the pieces can operate as one connected system.</p><div className="inner-actions"><a className="btn btn-primary-premium inner-btn-primary" href={sitePath("/contact")}>Book a Growth Audit <i className="bi bi-arrow-up-right"></i></a></div></div></div></section>
     </PageShell>
   );
 }

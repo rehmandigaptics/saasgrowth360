@@ -1,3 +1,4 @@
+import { sitePath } from "@/src/lib/site-path";
 import type { Metadata } from "next";
 import { PageShell } from "@/src/components/PageShell";
 import { ContactForm } from "@/src/components/ContactForm";
@@ -31,7 +32,7 @@ export default function ContactPage() {
               <div className="inner-hero-visual reveal-scale">
                 <div className="inner-image-card">
                   <img
-                    src="/assets/images/Start-conversation.png"
+                    src={sitePath("/assets/images/Start-conversation.png")}
                     alt="Team discussing SaaS growth strategy"
                   />
                   <div className="inner-image-caption">

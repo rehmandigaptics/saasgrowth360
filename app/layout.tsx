@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
+import { sitePath } from "@/src/lib/site-path";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${inter.variable} ${manrope.variable}`}>
       <head>
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href={sitePath("/assets/css/style.css")} />
       </head>
       <body>{children}</body>
     </html>

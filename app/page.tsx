@@ -1,3 +1,4 @@
+import { sitePath } from "@/src/lib/site-path";
 import type { Metadata } from "next";
 import { PageShell } from "@/src/components/PageShell";
 
@@ -111,7 +112,7 @@ export default function Page() {
                 <div className="col-lg-6">
                   <div className="about-split-visual reveal-scale">
                     <div className="about-image-frame">
-                      <img src="/assets/images/About-SaaSGrowth360.png" alt="SaaS growth team collaborating around a strategy session" loading="lazy" />
+                      <img src={sitePath("/assets/images/About-SaaSGrowth360.png")} alt="SaaS growth team collaborating around a strategy session" loading="lazy" />
                       <div className="about-image-shade"></div>
                       <div className="about-image-grid"></div>
                       <div className="about-image-label">
@@ -208,7 +209,7 @@ export default function Page() {
                     <p>Build predictable qualified pipeline with paid acquisition, organic growth, high-intent content and campaign systems designed around revenue.</p>
                     <div className="service-tags"><span>Paid Growth</span><span>SEO</span><span>Content</span></div>
                   </div>
-                  <a href="/services/acquisition" className="service-link" aria-label="Learn about Demand Generation">Explore service <i className="bi bi-arrow-up-right"></i></a>
+                  <a href={sitePath("/services/acquisition")} className="service-link" aria-label="Learn about Demand Generation">Explore service <i className="bi bi-arrow-up-right"></i></a>
                 </article>
 
                 <article className="service-card reveal-up">
@@ -219,7 +220,7 @@ export default function Page() {
                     <p>Turn more qualified traffic into demos, trials and customers through sharper messaging, better UX and disciplined experimentation.</p>
                     <div className="service-tags"><span>CRO</span><span>UX</span><span>A/B Testing</span></div>
                   </div>
-                  <a href="/services/cro" className="service-link">Explore service <i className="bi bi-arrow-up-right"></i></a>
+                  <a href={sitePath("/services/cro")} className="service-link">Explore service <i className="bi bi-arrow-up-right"></i></a>
                 </article>
 
                 <article className="service-card reveal-up">
@@ -230,7 +231,7 @@ export default function Page() {
                     <p>Align marketing, sales and success with clean CRM architecture, lead routing, attribution, lifecycle stages and reporting.</p>
                     <div className="service-tags"><span>CRM</span><span>Attribution</span><span>Routing</span></div>
                   </div>
-                  <a href="/services/revops" className="service-link">Explore service <i className="bi bi-arrow-up-right"></i></a>
+                  <a href={sitePath("/services/revops")} className="service-link">Explore service <i className="bi bi-arrow-up-right"></i></a>
                 </article>
 
                 <article className="service-card reveal-up">
@@ -241,7 +242,7 @@ export default function Page() {
                     <p>Improve activation, onboarding, engagement, renewal and expansion with lifecycle journeys built to compound customer value.</p>
                     <div className="service-tags"><span>Onboarding</span><span>Retention</span><span>Expansion</span></div>
                   </div>
-                  <a href="/services/retention" className="service-link">Explore service <i className="bi bi-arrow-up-right"></i></a>
+                  <a href={sitePath("/services/retention")} className="service-link">Explore service <i className="bi bi-arrow-up-right"></i></a>
                 </article>
 
                 <article className="service-card reveal-up">
@@ -252,7 +253,7 @@ export default function Page() {
                     <p>Use practical AI and workflow automation to accelerate research, content operations, lead intelligence, reporting and execution.</p>
                     <div className="service-tags"><span>AI Workflows</span><span>Automation</span><span>Analytics</span></div>
                   </div>
-                  <a href="/services/ai-automation" className="service-link">Explore service <i className="bi bi-arrow-up-right"></i></a>
+                  <a href={sitePath("/services/ai-automation")} className="service-link">Explore service <i className="bi bi-arrow-up-right"></i></a>
                 </article>
 
                 <article className="service-card service-card-strategy reveal-up">
@@ -263,7 +264,7 @@ export default function Page() {
                     <p>Identify the highest-leverage constraint, prioritize the roadmap and create a measurable growth operating plan your team can actually execute.</p>
                     <div className="service-tags"><span>Strategy</span><span>Roadmap</span><span>Measurement</span></div>
                   </div>
-                  <a href="/growth-system" className="service-link">Explore service <i className="bi bi-arrow-up-right"></i></a>
+                  <a href={sitePath("/growth-system")} className="service-link">Explore service <i className="bi bi-arrow-up-right"></i></a>
                 </article>
                 </div>
               </div>
@@ -485,7 +486,7 @@ export default function Page() {
                 <div className="row g-0 align-items-stretch">
                   <div className="col-lg-5">
                     <div className="about-v3-visual">
-                      <img src="/assets/images/Why-SaaSGrowth360.png" alt="Strategy team collaborating in a modern office" loading="lazy" />
+                      <img src={sitePath("/assets/images/Why-SaaSGrowth360.png")} alt="Strategy team collaborating in a modern office" loading="lazy" />
                       <div className="about-v3-image-overlay"></div>
                       <div className="about-v3-grid"></div>
                       <div className="about-v3-badge"><span></span> Built for ambitious SaaS teams</div>
