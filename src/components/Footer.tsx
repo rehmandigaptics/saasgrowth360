@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { sitePath } from "@/src/lib/site-path";
 
 export function Footer() {
   return (
@@ -46,6 +47,12 @@ export function Footer() {
           </div>
           <div className="footer-bottom premium-footer-bottom">
             <span>© 2026 SaaSGrowth360. All rights reserved.</span>
+            <div className="footer-powered">
+              <span>Powered by</span>
+              <a href="https://360growthlab.com/" target="_blank" rel="noopener noreferrer">
+                <img src={sitePath("/assets/images/360growthlab.png")} alt="360 Growth Lab" />
+              </a>
+            </div>
             <div className="footer-legal">
               <Link href="/privacy">Privacy</Link>
               <Link href="/terms">Terms</Link>
